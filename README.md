@@ -71,3 +71,4 @@ SQL is a standard language for accessing and manipulating databases.
 | Data to Object Mapping         | Requires ORM (object-relational mapping)                         | Many do not require ORMs. MongoDB documents map directly to data structures in most popular programming languages.                                                                                                               |
 
 
+## MySQL : From Basic to Advanced Level!
