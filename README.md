@@ -1,4 +1,4 @@
-# SQL : From Basic to Advanced Level!
+# MySQL : From Basic to Advanced Level!
 ![](/images/sql1.png)
 
 
@@ -69,3 +69,5 @@ SQL is a standard language for accessing and manipulating databases.
 | Multi-Record ACID Transactions | Supported                                                        | Most do not support multi-record ACID transactions. However, some — like MongoDB — do.                                                                                                                                           |
 | Joins                          | Typically required                                               | Typically not required                                                                                                                                                                                                           |
 | Data to Object Mapping         | Requires ORM (object-relational mapping)                         | Many do not require ORMs. MongoDB documents map directly to data structures in most popular programming languages.                                                                                                               |
+
+
