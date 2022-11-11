@@ -20,4 +20,28 @@ SQL is a standard language for accessing and manipulating databases.
 - SQL can create new tables in a database
 - SQL can create stored procedures in a database
 - SQL can create views in a database
-- SQL can set permissions on tables, procedures, and views
+- SQL can set permissions on tables, procedures, and views.
+
+## What is Database ?
+
+- Database is the collection of organized data which is structured and is stored electronically on a computer system. Databases can store data in the form of tables depending upon the type of database. The database's primary goal is to store a huge amount of data.
+
+- Databases are used to store a large number of dynamic websites on the Internet today. Data can then be accessed, managed, updated, regulated, and organized efficiently. For writing and retrieving data, most databases utilize structured query language (SQL).
+
+## What is DBMS ( Database Management System ) ?
+
+ - Database Management System (DBMS) is a software used for the storage, access and manipulation of data. Along with this, DBMS helps in securing data and getting useful insights from it. Common DBMS software are MySQL, PostgreSQL, Microsoft Access, MariaDB, SQLite and Microsoft SQL Server.
+
+## What is RDBMS ( Relational Database Management System ) ?
+
+  - An RDBMS is a type of database management system (DBMS) that stores data in a row-based table structure which connects related data elements. An RDBMS includes functions that maintain the security, accuracy, integrity and consistency of the data. 
+
+## NoSQL Database 
+
+ - NoSQL databases (aka "not only SQL") are non-tabular databases and store data differently than relational tables. NoSQL databases come in a variety of types based on their data model. The main types are document, key-value, wide-column, and graph. They provide flexible schemas and scale easily with large amounts of data and high user loads.
+
+  
+
+
+
+  
