@@ -59,6 +59,72 @@ SQL is a standard language for accessing and manipulating databases.
 
 ### SQL Vs NoSQL 
 
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-c3ow">SQL Databases</th>
+    <th class="tg-c3ow">NoSQL Databases</th>
+    <th class="tg-0pky"></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Data Storage Model</td>
+    <td class="tg-0pky">Tables with fixed rows and columns</td>
+    <td class="tg-0pky">Document: JSON documents, Key-value: key-value pairs, Wide-column: tables with rows and dynamic columns, Graph: nodes and edges</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Development History</td>
+    <td class="tg-0pky">Developed in the 1970s with a focus on reducing data duplication</td>
+    <td class="tg-0pky">Developed in the late 2000s with a focus on scaling and allowing for rapid application change driven by agile and DevOps practices.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Examples</td>
+    <td class="tg-0pky">Oracle, MySQL, Microsoft SQL Server, and PostgreSQL</td>
+    <td class="tg-0pky">Document: MongoDB and CouchDB, Key-value: Redis and DynamoDB, Wide-column: Cassandra and HBase, Graph: Neo4j and Amazon Neptune</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Primary Purpose</td>
+    <td class="tg-0pky">General purpose</td>
+    <td class="tg-0pky">Document: general purpose, Key-value: large amounts of data with simple lookup queries, Wide-column: large amounts of data with predictable query patterns, Graph: analyzing and traversing relationships between connected data</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Schemas</td>
+    <td class="tg-0pky">Rigid</td>
+    <td class="tg-0pky">Flexible</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Scaling</td>
+    <td class="tg-0pky">Vertical (scale-up with a larger server)</td>
+    <td class="tg-0pky">Horizontal (scale-out across commodity servers)</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Multi-Record ACID Transactions</td>
+    <td class="tg-0pky">Supported</td>
+    <td class="tg-0pky">Most do not support multi-record ACID transactions. However, some — like MongoDB — do.</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Joins</td>
+    <td class="tg-0pky">Typically required</td>
+    <td class="tg-0pky">Typically not required</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Data to Object Mapping</td>
+    <td class="tg-0pky">Requires ORM (object-relational mapping)</td>
+    <td class="tg-0pky">Many do not require ORMs. MongoDB documents map directly to data structures in most popular programming languages.</td>
+  </tr>
+</tbody>
+</table>
+
 
 
  
