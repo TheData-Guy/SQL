@@ -52,10 +52,14 @@ SQL is a standard language for accessing and manipulating databases.
 ![](/images/sql2.png)
 
  
-- *Document databases* store data in documents similar to JSON (JavaScript Object Notation) objects. Each document contains pairs of fields and values. The values can typically be a variety of types including things like strings, numbers, booleans, arrays, or objects.
-- Key-value databases are a simpler type of database where each item contains keys and values.
-- Wide-column stores store data in tables, rows, and dynamic columns.
-- Graph databases store data in nodes and edges. Nodes typically store information about people, places, and things, while edges store information about the relationships between the nodes.
+- __Document databases__ store data in documents similar to JSON (JavaScript Object Notation) objects. Each document contains pairs of fields and values. The values can typically be a variety of types including things like strings, numbers, booleans, arrays, or objects.
+- __Key-value databases__ are a simpler type of database where each item contains keys and values.
+- __Wide-column__ stores store data in tables, rows, and dynamic columns.
+- __Graph databases__ store data in nodes and edges. Nodes typically store information about people, places, and things, while edges store information about the relationships between the nodes.
+
+### SQL Vs NoSQL 
+
+
 
  
 
