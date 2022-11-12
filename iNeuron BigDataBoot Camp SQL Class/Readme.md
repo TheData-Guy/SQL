@@ -20,5 +20,6 @@
      - Adding Alias Name For Constraints.
 - Select Command To Query the Data.
 
+List of All  Commands [Click Here](https://github.com/TheData-Guy/SQL/tree/main/iNeuron%20BigDataBoot%20Camp%20SQL%20Class/Day%201)
 
 ## Day 2 : Starting with Basic MySQL Commands :
