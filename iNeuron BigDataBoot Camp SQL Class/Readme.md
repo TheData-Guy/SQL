@@ -10,7 +10,14 @@
   - Command to Create a Table Inside Database.
   - Command to List Down all the Tables in Database.
   - Command to Delete the Table in Database.
-  - Synatax to Insert Data into a Table
-  - 
+  - Syntax to Insert Data into a Table
+  - Synatax to Insert at Particular Column.
+  - Insert Into Multiple Rows Using Single Insert Statement.
+  - Use the Select Command to Query the Data.
+  - Integrity Constraint.
+     - Creating Table With Integrity Constraints.
+     - Example for Integrity Constraints.
+     - Adding Alias Name For Constraints.
+- Select Command To Query the Data.
 
 
