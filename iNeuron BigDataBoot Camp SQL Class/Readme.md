@@ -21,3 +21,4 @@
 - Select Command To Query the Data.
 
 
+## Day 2 : Starting with Basic MySQL Commands :
