@@ -149,17 +149,20 @@ select * from persons;
 #### Use the Select Command to Query the Data
 
         select * from persons;
+        
+### Truncate Command 
 
-truncate table persons;
+        truncate table persons;
+        
+### Drop Command
 
-select * from persons;
+        drop table persons;
 
-drop table persons;
+### Operations with Select Command
 
---- Operations with Select Command
+   select * from employee;
 
-select * from employee;
-
+### Command To Create a TABLE
 
 create table if not exists employee(
     id int,
@@ -170,74 +173,82 @@ create table if not exists employee(
     city varchar(50)
 );
 
-insert into employee values(1,'Aditya', 23, '2021-08-10', 10000, 'Pune');
+### Synatx To Insert data into a TABLE
 
-insert into employee values(2,'Rahul', 25, '2021-08-10', 20000, 'Khajuraho');
+        insert into employee values(1,'Aditya', 23, '2021-08-10', 10000, 'Pune');
 
-insert into employee values(3,'Sunny', 22, '2021-08-11', 11000, 'Banaglore');
+        insert into employee values(2,'Rahul', 25, '2021-08-10', 20000, 'Khajuraho');
 
-insert into employee values(5,'Amit', 25, '2021-08-11', 12000, 'Noida');
+        insert into employee values(3,'Sunny', 22, '2021-08-11', 11000, 'Banaglore');
 
-insert into employee values(1,'Puneet', 26, '2021-08-12', 50000, 'Gurgaon');
+        insert into employee values(5,'Amit', 25, '2021-08-11', 12000, 'Noida');
 
-select * from employee;
+        insert into employee values(1,'Puneet', 26, '2021-08-12', 50000, 'Gurgaon');
 
---- how to count total records
-select count(*) from employee;
+### Use the Select Command to Query the Data
 
+        select * from employee;
 
---- alias declaration
-select count(*) as total_row_count from employee;
+### How to count total records
 
-
---- display all columns in the final result
-select * from employee;
+        select count(*) from employee;
 
 
---- display specific columns in the final result
-select name, salary from employee;
+### Alias Declaration
+
+        select count(*) as total_row_count from employee;
 
 
---- aliases for mutiple columns
-select name as employee_name, salary as employee_salary from employee;
+### Display all columns in the final result
+
+        select * from employee;
 
 
-select * from employee;
+### Display specific columns in the final result
 
---- print unique hiring_dates from the employee table when employees joined it
-select Distinct(hiring_date) as distinct_hiring_dates from employee;
-
-
-select * from employee;
-
---- How many unique age values in the table??
-
-select  count(distinct(age)) as total_unique_ages from employee;
-
---- Increment salary of each employee by 20% and display final result with new salary
-SELECT  id,
-        name,
-        salary as old_salary, 
-        (salary + salary * 0.2) as new_salary
-FROM employee;
+        select name, salary from employee;
 
 
--- Syntax for update command
-select * from employee;
+###  Aliases for mutiple columns
 
---- Upadtes will be made for all rows
-UPDATE employee SET age = 20;
-
-select * from employee;
-
---- update the salary of employee after giving 20% increment
-UPDATE employee SET salary = salary + salary * 0.2;
-
-select * from employee;
+        select name as employee_name, salary as employee_salary from employee;
 
 
---- How to filter data using WHERE Clauses
-select * from employee where hiring_date = '2021-08-10';
+        
+
+#### Print unique hiring_dates from the employee table when employees joined it
+
+        select Distinct(hiring_date) as distinct_hiring_dates from employee;
+
+
+### How many unique age values in the table??
+
+        select  count(distinct(age)) as total_unique_ages from employee;
+
+### Increment salary of each employee by 20% and display final result with new salary
+
+        SELECT  id,
+                name,
+                salary as old_salary, 
+                (salary + salary * 0.2) as new_salary
+        FROM employee;
+
+
+### Syntax for update command
+
+#### Upadtes will be made for all rows
+
+        UPDATE employee SET age = 20;
+
+
+
+### Update the salary of employee after giving 20% increment
+
+        UPDATE employee SET salary = salary + salary * 0.2;
+
+### How to filter data using WHERE Clauses
+
+        select * from employee where hiring_date = '2021-08-10';
 
 
 select * from employee;
