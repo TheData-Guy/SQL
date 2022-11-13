@@ -1,21 +1,27 @@
+### Create Database Command
 
-CREATE DATABASE class2_db;
+        CREATE DATABASE class2_db;
+    
+### Go inside the Particular DATABASE
 
-Use class2_db;
+        Use class2_db;
 
+### Command To Create a TABLE
 
-create table if not exists employee (
-    id int,
-    name VARCHAR(50),
-    address VARCHAR(50),
-    city VARCHAR(50)
-);
+            create table if not exists employee (
+                id int,
+                name VARCHAR(50),
+                address VARCHAR(50),
+                city VARCHAR(50)
+            );
+### Synatx To Insert data into a TABLE
 
-insert into employee values (1,'Aditya','hinjwadi','Pune');
-
+        insert into employee values (1,'Aditya','hinjwadi','Pune');
+### Use the Select Command to Query the Data
 SELECT *from employee;
 
--- Asdd New Column Named DOB in the TABLE 
+### Alter Table Commands
+-- Add New Column Named DOB in the TABLE 
 
 Alter Table employee add DOB DATE;
 
