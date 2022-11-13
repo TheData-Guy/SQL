@@ -1,82 +1,108 @@
-CREATE DATABASE class3_db;
+## DAY 3:
 
-Use class3_db;
+### Create Database Command
 
-create table if not exists employee(
-    id int,
-    name VARCHAR(50),
-    age int,
-    hiring_date date,
-    salary int,
-    city varchar(50)
-);
+	CREATE DATABASE class3_db;
+	
+### Go inside the Particular DATABASE
 
+	Use class3_db;
+	
+### Command To Create a TABLE
 
-insert into employee values(1,'Aditya', 23, '2021-08-10', 10000, 'Pune');
-insert into employee values(2,'Rahul', 25, '2021-08-10', 20000, 'Khajuraho');
-insert into employee values(3,'Sunny', 22, '2021-08-11', 11000, 'Banaglore');
-insert into employee values(5,'Amit', 25, '2021-08-11', 12000, 'Noida');
-insert into employee values(1,'Puneet', 26, '2021-08-12', 50000, 'Gurgaon');
+	create table if not exists employee(
+	    id int,
+	    name VARCHAR(50),
+	    age int,
+	    hiring_date date,
+	    salary int,
+	    city varchar(50)
+	);
 
-select *from employee;
+### Synatx To Insert data into a TABLE
 
---- How to perform multi updates
-update employee set age=20,salary=25000 where hiring_date = '2021-08-10';
+	insert into employee values(1,'Aditya', 23, '2021-08-10', 10000, 'Pune');
+	insert into employee values(2,'Rahul', 25, '2021-08-10', 20000, 'Khajuraho');
+	insert into employee values(3,'Sunny', 22, '2021-08-11', 11000, 'Banaglore');
+	insert into employee values(5,'Amit', 25, '2021-08-11', 12000, 'Noida');
+	insert into employee values(1,'Puneet', 26, '2021-08-12', 50000, 'Gurgaon');
 
-select * from employee;
+### Use the Select Command to Query the Data
 
---- How to apply auto increment
-create table auto_inc_exmp
-(
-  id int auto_increment,
-  name varchar(20),
-  primary key (id)
-);
+	select * from employee;
 
-insert into auto_inc_exmp(name) values('Aditya');
-insert into auto_inc_exmp(name) values('Rahul');
+### How to perform multi updates
 
+	update employee set age=20,salary=25000 where hiring_date = '2021-08-10';
+	
+### Use the Select Command to Query the Data
 
-select * from auto_inc_exmp;
+	select * from employee;
 
---- Use of limit 
-select * from employee;
-select * from employee limit 2;
+###  How to apply auto increment
 
+	create table auto_inc_exmp
+	(
+	  id int auto_increment,
+	  name varchar(20),
+	  primary key (id)
+	);
+### Use the Select Command to Query the Data
 
--- sorting data in mysql by using 'Order By'
-select * from employee;
+	insert into auto_inc_exmp(name) values('Aditya');
+	insert into auto_inc_exmp(name) values('Rahul');
 
+### Use the Select Command to Query the Data
 
---arrage data in ascending order
-select * from employee order by name;
+	select * from auto_inc_exmp;
 
--- arrage data in descending order
-select * from employee order by name desc;
+###  Use of limit Command
 
---display employee data in desc order of salary and if salaries are same for more than one employees
---arrange their data in ascedinding order of name
-
-select * from employee order by salary desc, name asc;
-
--- when we ignore multilevel ordering
-select * from employee order by salary desc;
-
--- Write a query to find the employee who is getting maximum salary?
-select * from employee order by salary desc limit 1;
+	select * from employee;
+	select * from employee limit 2;
 
 
+### Sorting data in mysql by using 'Order By'
 
---Write a query to find the employee who is getting minium salary?
-select * from employee order by salary limit 1;
+       select * from employee;
 
 
-select * from employee;
+### Arrage data in ascending order
 
--- list all employees who are getting salary more than 20000
-select * from employee where salary>20000;
+	select * from employee order by name;
 
---list all employees who are getting salary more than or equal to 20000
+### Arrage data in descending order
+
+	select * from employee order by name desc;
+
+### Display employee data in desc order of salary and if salaries are same for more than one employees arrange their data in ascedinding order of name
+
+	select * from employee order by salary desc, name asc;
+
+### when we ignore multilevel ordering
+
+	select * from employee order by salary desc;
+
+###  Write a query to find the employee who is getting maximum salary?
+
+	select * from employee order by salary desc limit 1;
+
+
+### Write a query to find the employee who is getting minium salary?
+
+	select * from employee order by salary limit 1;
+
+### Use the Select Command to Query the Data
+
+	select * from employee;
+### Operators and Between Commands
+
+### List all employees who are getting salary more than 20000
+
+	select * from employee where salary>20000;
+
+### List all employees who are getting salary more than or equal to 20000
+
 select * from employee where salary>=20000;
 
 -- list all employees who are getting less than 20000
