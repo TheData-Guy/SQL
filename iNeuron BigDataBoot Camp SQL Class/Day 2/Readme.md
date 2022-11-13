@@ -122,7 +122,7 @@
         
 ### Use the Select Command to Query the Data
 
-select * from persons;
+        select * from persons;
 
 ###  Create table with Primary Key and Foregin Key 
 
