@@ -160,18 +160,18 @@ select * from persons;
 
 ### Operations with Select Command
 
-   select * from employee;
+        select * from employee;
 
 ### Command To Create a TABLE
 
-create table if not exists employee(
-    id int,
-    name VARCHAR(50),
-    age int,
-    hiring_date date,
-    salary int,
-    city varchar(50)
-);
+        create table if not exists employee(
+            id int,
+            name VARCHAR(50),
+            age int,
+            hiring_date date,
+            salary int,
+            city varchar(50)
+        );
 
 ### Synatx To Insert data into a TABLE
 
