@@ -47,7 +47,7 @@
 	  name varchar(20),
 	  primary key (id)
 	);
-### Use the Select Command to Query the Data
+### Use the Insert Command to Insert the Data
 
 	insert into auto_inc_exmp(name) values('Aditya');
 	insert into auto_inc_exmp(name) values('Rahul');
@@ -103,106 +103,139 @@
 
 ### List all employees who are getting salary more than or equal to 20000
 
-select * from employee where salary>=20000;
+	select * from employee where salary>=20000;
 
--- list all employees who are getting less than 20000
-select * from employee where salary<20000;
+### List all employees who are getting less than 20000
 
--- list all employees who are getting salary less than or equal to 20000
-select * from employee where salary<=20000;
+	select * from employee where salary<20000;
 
+### List all employees who are getting salary less than or equal to 20000
 
--- filter the record where age of employees is equal to 20
-select * from employee where age=20;
-
--- filter the record where age of employees is not equal to 20
--- we can use != or we can use <>
-select * from employee where age != 20;
-select * from employee where age <> 20;
-
--- find those employees who joined the company on 2021-08-11 and their salary is less than 11500
-select * from employee where hiring_date = '2021-08-11' and salary<11500;
-
--- find those employees who joined the company after 2021-08-11 or  their salary is less than 20000
-select * from employee where hiring_date > '2021-08-11' or salary<20000;
-
--- how to use Between operation in where clause
--- get all employees data who joined the company between hiring_date 2021-08-05 to 2021-08-11
-select * from employee where hiring_date between '2021-08-05' and '2021-08-11';
-
--- get all employees data who are getting salary in the range of 10000 to 28000
-select * from employee where salary between 10000 and 28000;
+	select * from employee where salary<=20000;
 
 
+### Filter the record where age of employees is equal to 20
 
--- get all those employees whose name starts with 'S'
-select * from employee where name like 'S%';
+	select * from employee where age=20;
 
--- get all those employees whose name starts with 'Sh'
-select * from employee where name like 'Sh%';
+### Filter the record where age of employees is not equal to 20
 
--- get all those employees whose name ends with 'l'
-select * from employee where name like '%l';
+#### we can use != or we can use <>
 
--- get all those employees whose name starts with 'S' and ends with 'k'
-select * from employee where name like 'S%k';
+	select * from employee where age != 20;
+	select * from employee where age <> 20;
 
--- Get all those employees whose name will have exact 5 characters
-select * from employee where name like '_____';
--- Return all those employees whose name contains atleast 5 characters
-select * from employee where name like '%_____%';
+### Find those employees who joined the company on 2021-08-11 and their salary is less than 11500
 
--- How to use IS NULL or IS NOT NULL in the where clause
-insert into employee values(10,'Kapil', null, '2021-08-10', 10000, 'Assam');
-insert into employee values(11,'Nikhil', 30, '2021-08-10', null, 'Assam');
+	select * from employee where hiring_date = '2021-08-11' and salary<11500;
 
-select * from employee;
+### Find those employees who joined the company after 2021-08-11 or  their salary is less than 20000
 
--- get all those employees whos age value is null
-select * from employee where age is null;
+	select * from employee where hiring_date > '2021-08-11' or salary<20000;
 
-select * from employee;
+### How to use Between operation in where clause
+#### Get all employees data who joined the company between hiring_date 2021-08-05 to 2021-08-11
 
--- get all those employees whos salary value is not null
-select * from employee where salary is not null;
+	select * from employee where hiring_date between '2021-08-05' and '2021-08-11';
+	
+###  get all employees data who are getting salary in the range of 10000 to 28000
 
+	select * from employee where salary between 10000 and 28000;
 
--- Table and Data for Group By
-create table orders_data
-(
- cust_id int,
- order_id int,
- country varchar(50),
- state varchar(50)
-);
+### Like Operators 
 
+### Get all those employees whose name starts with 'S'
 
-insert into orders_data values(1,100,'USA','Seattle');
-insert into orders_data values(2,101,'INDIA','UP');
-insert into orders_data values(2,103,'INDIA','Bihar');
-insert into orders_data values(4,108,'USA','WDC');
-insert into orders_data values(5,109,'UK','London');
-insert into orders_data values(4,110,'USA','WDC');
-insert into orders_data values(3,120,'INDIA','AP');
-insert into orders_data values(2,121,'INDIA','Goa');
-insert into orders_data values(1,131,'USA','Seattle');
-insert into orders_data values(6,142,'USA','Seattle');
-insert into orders_data values(7,150,'USA','Seattle');
+	select * from employee where name like 'S%';
 
-select * from orders_data;
+### Get all those employees whose name starts with 'Sh'
 
--- calculate total order placed country wise
-select country, count(*) as order_count_by_each_country from orders_data group by country;
+	select * from employee where name like 'Sh%';
 
--- Write a query to find the total salary by each age group 
-select * from employee;
-select age, sum(salary) as total_salary_by_each_age_group from employee group by age;
+### get all those employees whose name ends with 'l'
 
---calculate different aggregated metrices for salary
-select age, 
-	   sum(salary) as total_salary_by_each_age_group,
-       max(salary) as max_salary_by_each_age_group,
-       min(salary) as min_salary_by_each_age_group,
-       avg(salary) as avg_salary_by_each_age_group,
-       count(*) as total_employees_by_each_age_group
-from employee group by age;
+	select * from employee where name like '%l';
+	
+### get all those employees whose name starts with 'S' and ends with 'k'
+
+	select * from employee where name like 'S%k';
+
+### Get all those employees whose name will have exact 5 characters
+
+	select * from employee where name like '_____';
+	
+### Return all those employees whose name contains atleast 5 characters
+
+	select * from employee where name like '%_____%';
+
+### How to use IS NULL or IS NOT NULL in the where clause
+
+	insert into employee values(10,'Kapil', null, '2021-08-10', 10000, 'Assam');
+	insert into employee values(11,'Nikhil', 30, '2021-08-10', null, 'Assam');
+	
+### Use the Select Command to Query the Data
+
+	select * from employee;
+	
+### IS NULL & NOT NULL Operator.
+
+### get all those employees whos age value is null
+
+	select * from employee where age is null;
+	
+### Use the Select Command to Query the Data
+
+	select * from employee;
+
+### Get all those employees whos salary value is not null
+
+	select * from employee where salary is not null;
+
+### Group By Clause
+
+###  Table and Data for Group By
+
+	create table orders_data
+	(
+	 cust_id int,
+	 order_id int,
+	 country varchar(50),
+	 state varchar(50)
+	);
+	
+### Use the Insert Command to Insert the Data
+
+	insert into orders_data values(1,100,'USA','Seattle');
+	insert into orders_data values(2,101,'INDIA','UP');
+	insert into orders_data values(2,103,'INDIA','Bihar');
+	insert into orders_data values(4,108,'USA','WDC');
+	insert into orders_data values(5,109,'UK','London');
+	insert into orders_data values(4,110,'USA','WDC');
+	insert into orders_data values(3,120,'INDIA','AP');
+	insert into orders_data values(2,121,'INDIA','Goa');
+	insert into orders_data values(1,131,'USA','Seattle');
+	insert into orders_data values(6,142,'USA','Seattle');
+	insert into orders_data values(7,150,'USA','Seattle');
+
+### Use the Select Command to Query the Data
+
+	select * from orders_data;
+
+### Calculate total order placed country wise
+
+	select country, count(*) as order_count_by_each_country from orders_data group by country;
+
+### Write a query to find the total salary by each age group 
+
+	
+ 	select age, sum(salary) as total_salary_by_each_age_group from employee group by age;
+
+### Calculate different aggregated metrices for salary
+
+	select age, 
+		   sum(salary) as total_salary_by_each_age_group,
+	       max(salary) as max_salary_by_each_age_group,
+	       min(salary) as min_salary_by_each_age_group,
+	       avg(salary) as avg_salary_by_each_age_group,
+	       count(*) as total_employees_by_each_age_group
+	from employee group by age;
