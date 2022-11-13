@@ -250,20 +250,19 @@ create table if not exists employee(
 
         select * from employee where hiring_date = '2021-08-10';
 
+### Update the salary of employees who joined the company on 2021-08-10 to 80000
 
-select * from employee;
-
---- Update the salary of employees who joined the company on 2021-08-10 to 80000
-update employee SET salary = 80000 where hiring_date = '2021-08-10';
-
-select * from employee;
+        update employee SET salary = 80000 where hiring_date = '2021-08-10';
 
 
---- how to delete specific records from table using delete command
---- delete records of those employess who joined company on 2021-08-10
 
-delete from employee where hiring_date = '2021-08-10';
+### How to delete specific records from table using delete command
 
+#### delete records of those employess who joined company on 2021-08-10
+
+        delete from employee where hiring_date = '2021-08-10';
+
+### Operations with Select Command
 
 select * from employee;
 
