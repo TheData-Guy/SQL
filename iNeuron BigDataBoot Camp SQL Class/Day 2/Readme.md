@@ -17,109 +17,139 @@
 ### Synatx To Insert data into a TABLE
 
         insert into employee values (1,'Aditya','hinjwadi','Pune');
+        
 ### Use the Select Command to Query the Data
-SELECT *from employee;
+
+        SELECT *from employee;
 
 ### Alter Table Commands
--- Add New Column Named DOB in the TABLE 
 
-Alter Table employee add DOB DATE;
+        -- Add New Column Named DOB in the TABLE 
 
+        Alter Table employee add DOB DATE;
 
-sELECT * From employee;
+### Use the Select Command to Query the Data
 
--- Modify Existing Column in a Table or Change DataType of Name Column or Increase Length of Name COLUMN
+        SELECT * From employee;
 
-Alter Table employee modify column name varchar(100);
+### Modify Existing Column in a Table or Change DataType of Name Column or Increase Length of Name COLUMN
 
--- Delete Existing Column from Given TABLE or Remove City Column from Employee Table 
+        Alter Table employee modify column name varchar(100);
 
-Alter Table  employee drop column city;
+### Delete Existing Column from Given TABLE or Remove City Column from Employee Table 
 
+      Alter Table  employee drop column city;
 
-SELECT * From employee;
+### Use the Select Command to Query the Data
 
--- RENAME THE  COLUMN NAME TO FULL_NAME
+        SELECT * From employee;
 
-ALTER Table employee rename column name to full_name;
+### RENAME THE  COLUMN NAME TO FULL_NAME
 
--- Add Unique Integrity Constarint on id Column
+        ALTER Table employee rename column name to full_name;
 
-Alter Table employee add CONSTRAINT id_Unique UNIQUE(id);
+### Add Unique Integrity Constarint on id Column
 
--- Checking the Integrity Constarint
-insert into employee values (1,'Aditya','hinjwadi','Pune');
+        Alter Table employee add CONSTRAINT id_Unique UNIQUE(id);
 
--- Drop Constraint from Existing Table
+### Checking the Integrity Constarint
 
-Alter Table employee Drop   constraint id_unique;
--- Checking the Integrity Constarint
-insert into employee values (1,'Aditya','hinjwadi','2022-10-22');
+        insert into employee values (1,'Aditya','hinjwadi','Pune');
 
-Select * from employee;
+### Drop Constraint from Existing Table
 
---- create table with Primary_Key
+        Alter Table employee Drop   constraint id_unique;
+        
+### Checking the Integrity Constarint
 
+        insert into employee values (1,'Aditya','hinjwadi','2022-10-22');
+        
+### Use the Select Command to Query the Data
 
-Create table persons
-(
-    id int, 
-    name varchar(50), 
-    age int,
-    ---Primary Key (id) 
-    constraint pk Primary Key (id) 
-);
+        Select * from employee;
 
-insert Into persons Values (1,'Aditya',23)
+### Primary and Foregin Key 
 
--- Try to insert duplicate value for primary key COLUMN 
+#### Create table with Primary Key 
 
-insert into persons values(1,'Rahul',28);
+        Create table persons
+        (
+            id int, 
+            name varchar(50), 
+            age int,
+            ---Primary Key (id) 
+            constraint pk Primary Key (id) 
+        );
+### Synatx To Insert data into a TABLE
 
---- Try to insert null value for primary key COLUMN
-insert into persons values(null,'Rahul',28);
+        insert Into persons Values (1,'Aditya',23)
 
---- To check difference between Primary Key and Unique
-alter table persons add constraint age_unq UNIQUE(age); 
+### Try to insert duplicate value for primary key COLUMN 
+
+        insert into persons values(1,'Rahul',28);
+
+### Try to insert null value for primary key COLUMN
+
+        insert into persons values(null,'Rahul',28);
+
+### To check difference between Primary Key and Unique
+
+      Alter table persons add constraint age_unq UNIQUE(age); 
+      
+### Use the Select Command to Query the Data
+
+        select * from persons;
+        
+### Synatx To Insert data into a TABLE
+
+        insert into persons values(2,'Rahul',28);
+
+        insert into persons values(3,'Amit',28);
+        
+### Synatx To Insert data into a TABLE with Null 
+
+        insert into persons values(3,'Amit',null);
+        
+### Use the Select Command to Query the Data
+
+        select * from persons;
+        
+### Synatx To Insert data into a TABLE with Null 
+
+        insert into persons values(4,'Charan',null);
+
+        insert into persons values(5,'Deepak',null);
+        
+### Use the Select Command to Query the Data
 
 select * from persons;
 
-insert into persons values(2,'Rahul',28);
+###  Create table with Primary Key and Foregin Key 
+
+        create table customer
+        (
+            cust_id int,
+            name VARCHAR(50), 
+            age int,
+            constraint pk Primary Key (cust_id) 
+        );
+
+        create table orders
+        (
+            order_id int,
+            order_num int,
+            customer_id int,
+            constraint pk Primary Key (order_id),
+            constraint fk Foreign Key (customer_id) REFERENCES customer(cust_id)
+        );
 
 
-insert into persons values(3,'Amit',28);
+### Differen between Drop & Truncate Command
 
-insert into persons values(3,'Amit',null);
+#### Use the Select Command to Query the Data
 
-select * from persons;
+        select * from persons;
 
-insert into persons values(4,'Charan',null);
-
-insert into persons values(5,'Deepak',null);
-
-select * from persons;
-
-create table customer
-(
-    cust_id int,
-    name VARCHAR(50), 
-    age int,
-    constraint pk Primary Key (cust_id) 
-);
-
-create table orders
-(
-    order_id int,
-    order_num int,
-    customer_id int,
-    constraint pk Primary Key (order_id),
-    constraint fk Foreign Key (customer_id) REFERENCES customer(cust_id)
-);
-
-
---- Differen between Drop & Truncate Command
-
-select * from persons;
 truncate table persons;
 
 select * from persons;
