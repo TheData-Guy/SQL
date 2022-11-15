@@ -264,5 +264,5 @@
 
 ### Operations with Select Command
 
-select * from employee;
+        select * from employee;
 
