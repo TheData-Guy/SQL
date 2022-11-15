@@ -22,4 +22,14 @@
 
 List of All Commands for Day 1. [Click Here](https://github.com/TheData-Guy/SQL/tree/main/iNeuron%20BigDataBoot%20Camp%20SQL%20Class/Day%201)
 
-## Day 2 : Starting with Basic MySQL Commands :
+## Day 2 : Starting with Keys in MySQL & DDL and DML Commands :
+
+- Alter Table Commands.
+- Modify Existing Column in a Table or Change DataType.
+- Delete Existing Column from Given TABLE or Remove.
+
+
+
+
+
+
