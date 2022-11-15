@@ -57,11 +57,19 @@ List of All Commands for Day 2. [Click Here](https://github.com/TheData-Guy/SQL/
 
 List of All Commands for Day 3. [Click Here](https://github.com/TheData-Guy/SQL/tree/main/iNeuron%20BigDataBoot%20Camp%20SQL%20Class/Day%203)
 
-## Day 3 : Starting with Having Clause, Cases, SubQuery & Joins :
+## Day 4 : Starting with Having Clause, Cases, SubQuery & Joins :
 
 - Use of Having Clause.
 - Where Clause and Group by Clause what is the Proper Sequence ?
-
+- How to Use GROUP_CONCAT.
+- SubQueries in SQL.
+- Use of In and Not In.
+- Case When in SQL
+- Joins 
+  - Inner Join
+  - Left Join
+  - Right Join
+  - Cross Join.
 
 
 
