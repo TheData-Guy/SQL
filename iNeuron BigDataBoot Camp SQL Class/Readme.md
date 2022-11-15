@@ -27,6 +27,17 @@ List of All Commands for Day 1. [Click Here](https://github.com/TheData-Guy/SQL/
 - Alter Table Commands.
 - Modify Existing Column in a Table or Change DataType.
 - Delete Existing Column from Given TABLE or Remove.
+- Rename the Column Name.
+- Add Unique Integrity Constarint.
+- Drop Constraint from Existing Table.
+- Primary and Foregin Key
+  -  Create table with Primary Key.
+  -  Create table with Foregin Key.
+- Difference Between Unique and Primary Key.
+- Differen between Drop & Truncate Command.
+- Operations with Select Command.
+- Where Clause.
+- Update Command
 
 
 
