@@ -40,6 +40,9 @@ List of All Commands for Day 1. [Click Here](https://github.com/TheData-Guy/SQL/
 - Update Command
 
 
+List of All Commands for Day 2. [Click Here](https://github.com/TheData-Guy/SQL/tree/main/iNeuron%20BigDataBoot%20Camp%20SQL%20Class/Day%202)
+
+
 
 
 
