@@ -78,3 +78,18 @@ List of All Commands for Day 4. [Click Here](https://github.com/TheData-Guy/SQL/
 ## Day 5 : Starting with Window Function & Frame Clause :
 
 - Query Execution Fast & Slow Example.
+- Window Functions.
+  - If we Only use partition by In Over Clause.
+  - If we Only use Order by In Over Clause.
+  - If we use Partition by & Order by both In Over Clause.
+  - Rolling Average Amazon Sales Question.
+- Rank(), Row_Number(), Dense_Rank() in Window functions.
+- Lag and Lead
+- Difference between Lead and Lag
+- How to use Frame Clause - Rows BETWEEN
+  - Preceding.
+  - Following.
+  - Current Row.
+  - Unbounded Preceding.
+  - Unbounded Following
+- How to work with Range Between.
