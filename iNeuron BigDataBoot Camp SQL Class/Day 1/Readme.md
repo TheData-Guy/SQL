@@ -24,7 +24,7 @@
           name VARCHAR(50)
       );
 
-### Command to List Down all the Tables in DATABASE
+### Command to List the Schema of the Particular Table in the Database.
 
      SHOW CREATE TABLE Employee;
 
