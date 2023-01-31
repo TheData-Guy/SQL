@@ -1,4 +1,4 @@
-# MySQL : From Basic to Advanced Level! 
+# MySQL : From Basic to Advanced Level!::: 
 ![](/images/sql1.png)
 
 
